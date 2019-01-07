@@ -1,7 +1,7 @@
 
 <?php
 
-namespace model;
+namespace app\model;
 
 class  Cart extends Model{
 

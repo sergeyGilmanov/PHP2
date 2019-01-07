@@ -1,7 +1,7 @@
 <?php
 
 
-namespace model;
+namespace app\model;
 
 use interfaces\IModel;
 use \engine\Db as Db;

@@ -1,10 +1,12 @@
 <?php
 
+namespace app\engine;
+
 class Autoload
 {
     public function loadClass($className) {
-            $classNameRp = str_replace("\\", "/", $className);
-            $fileName = "../{$classNameRp}.php";
+            $className = str_replace(["app\\","\\"], ["../","/"], $className);
+            $fileName = "../{$className}.php";
             if (file_exists($fileName)) {
                 include $fileName;
                 return;

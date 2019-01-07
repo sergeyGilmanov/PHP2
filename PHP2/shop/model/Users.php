@@ -1,7 +1,8 @@
 <?php
 
+namespace app\model;
 
-class Users extends model\Model
+class Users extends Model
 {
     public $id;
     public $login;

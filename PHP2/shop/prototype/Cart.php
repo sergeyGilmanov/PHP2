@@ -1,7 +1,7 @@
 <?php
 
 
-namespace prototype;
+namespace app\prototype;
 
 trait Cart
 {
