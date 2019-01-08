@@ -1,0 +1,15 @@
+<?php
+
+namespace app\engine;
+
+class Autoload
+{
+    public function loadClass($className) {
+            $fileName = ROOT_DIR . "{$className}.php";
+            $fileName = str_replace(["/app","\\"],['', '/'],$fileName);/
+            
+            if (file_exists($fileName)) {
+                include_once $fileName;
+            }
+    }
+}
